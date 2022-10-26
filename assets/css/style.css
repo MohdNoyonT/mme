@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* top menu */
+.top-menu {
+    background: rgb(255, 142, 0);
+    padding: 15px 0;
+}
+
+.top-menu a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.top-menu .contact-info {
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+}
+.top-menu .contact-info a{
+    text-decoration: none;
+}
+
+
+.top-menu .top-menu-item {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+.top-menu .top-menu-item li a{
+    text-decoration: none;
+}
+/* main menu */
+.main-menu {
+    padding: 20px 0;
+}
+
+.main-menu .logo {
+    flex-basis: 15%;
+}
+
+.main-menu .logo img {
+    width: 100px;
+}
+
+.main-menu .main-nav {
+    flex-basis: 55%;
+}
+
+.main-menu .main-nav li a {
+    color: #0D0E43;
+    text-decoration: none;
+}
+
+.main-menu .main-nav li .active {
+    color: #FB2E86;
+}
+
+.main-menu .search {
+    flex-basis: 30%;
+}
+
+.search-btn {
+    background: #FB2E86;
+    padding: 8px 14px;
+    border: none;
+}
+
+.search .form-area {
+    display: flex;
+}
+
+.search .form-area input {
+    border: 2px solid #E7E6EF;
+    padding: 8px 10px;
+    width: 100%;
+}
+
+.search .form-area input:focus {
+    border: 2px solid #E7E6EF;
+    outline: none;
+}
+
+.search-btn i {
+    color: #fff;
+}
+
+/* hero section */
+.hero {
+    background: #F2F0FF;
+    padding: 20px;
+}
+
+.hero .text-area {
+    padding: 130px 0;
+}
+
+.hero .sub-heading {
+    font-family: 'Lato', sans-serif;
+    color: #FB2E86;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: black;
+    font-weight: bold;
+}
+
+.hero .hero-btn {
+    background: #FB2E86;
+    border-radius: 2px;
+    padding: 16px 40px;
+    color: #fff;
+}
+.hero .text-area a{
+    text-decoration: none;
+}
+.card .image{
+    padding: 45px 45px 12px 46px;
+    background: oldlace;
+}
+.text-area h3 a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.row .card{
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+.card .text-area{
+    padding: 15px;
+}
+.feat-item .card .title{
+    color: yellow;
+    font-family: 'Bangers', cursive;
+    font-weight: 1000;
+    letter-spacing: 1px;
+}
+.feat-item .color div{
+    width: 14px;
+    height: 4px;
+}
+.feat-item .color .why{
+    background: black;
+    border-radius: 10px;
+}
+.feat-item .color .if{
+    background: red;
+    border-radius: 10px;
+}
+.feat-item .color .what{
+    background: blue;
+    border-radius: 10px;
+}
+.feat-item .color{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.feat-item{
+    padding: 130px 0 30px 0;
+}
+.feat-item .item .image{
+    position: relative;
+    background: skyblue;
+    text-align: center;
+    padding: 45px 45px 12px 45px;
+}
+.feat-item .item .image img{
+    width: 178px;
+}
+.feat-item .item .image .buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+.feat-item .item .image .buttons a{
+ width: 30px;
+ height: 30px;
+ background: yellow;
+ box-shadow: 0px 0px 4px black rgba(0, 0, 0, 0.05);
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-decoration: none;
+
+}
+.feat-item .item:hover .buttons {
+    opacity: 1;
+    visibility: visible;
+}
+.feat-item .item:hover .image{
+   padding: 48px 48px 36px 48px; 
+}
+.feat-item .item:hover .image img{
+   width: 130px; 
+}
+.feat-item .item .image .details{
+    background: springgreen;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 13px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.feat-item .item:hover .image .details{
+    opacity: 1;
+    visibility: visible;
+}
+.feat-item .item:hover .text-area{
+    background: steelblue;
+    color: white;
+}
+.feat-item .item:hover .text-area a{
+    color: black;
+}
+.feat-item p{
+    margin: 0;
+}
+/*col*/
+.mix .card .title{
+    color: yellow;
+    font-family: 'Bangers', cursive;
+    font-weight: 1000;
+    letter-spacing: 1px;
+}
+.mix .color div{
+    width: 14px;
+    height: 4px;
+}
+.mix .color{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.mix{
+    padding: 130px 0 30px 0;
+}
+.mix .item .image{
+    position: relative;
+    background: skyblue;
+    text-align: center;
+    padding: 45px 45px 12px 45px;
+}
+.mix .item .image img{
+    width: 178px;
+}
+.mix .item .image .buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+.mix .item .image .buttons a{
+ width: 30px;
+ height: 30px;
+ background: yellow;
+ box-shadow: 0px 0px 4px black rgba(0, 0, 0, 0.05);
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-decoration: none;
+bottom: 0;
+left: 0;
+}
+.mix .item:hover .buttons {
+    opacity: 1;
+    visibility: visible;
+}
+.mix .item:hover .image{
+   padding: 48px 48px 36px 48px; 
+}
+.mix .item:hover .image img{
+   width: 130px; 
+}
+
+.mix .item:hover .image .details{
+    opacity: 1;
+    visibility: visible;
+}
+.mix .item:hover .text-area{
+    background: steelblue;
+    color: white;
+}
+.mix .item:hover .text-area a{
+    color: black;
+}
+.mix p{
+    margin: 0;
+}
